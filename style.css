@@ -1,0 +1,12 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("redsunset.jpg");
+    background-repeat:repeat;
+    }
+h1{
+    color:rgb(255, 0, 0);
+}
+h2{
+    color:rgb(255, 223, 155)
+}
