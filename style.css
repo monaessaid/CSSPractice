@@ -9,17 +9,34 @@ h1{
     color:rgb(255, 0, 0);
 }
 h2{
-    color:rgb(255, 223, 155)
+    color:rgb(255, 248, 169);
 }
+#navbar{
+    list-style-type: none;
+    margin:auto;
+    padding: 20px;
+    color:white;
+    display: flex;
+    display: block;
+    padding: 5px;
+    background: rgb(255, 248, 169);
+    overflow:hidden;
+}
+li{
+    float:left;
+    margin-right:50px;
+}
+a {
+    display: block;
+    padding: 5px;
+    background: rgb(255, 248, 169);
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+  }
 p{
     color:rgb(216, 0, 11)
 }
 #paragraphs {
     background: rgba(255, 255, 255, 0.25);
-}
-#navbar{
-    list-style-type: none;
-    margin:0;
-    padding: 0;
-    color:white;
 }
