@@ -15,7 +15,6 @@ h2{
     list-style-type: none;
     margin:auto;
     padding: 20px;
-    color:white;
     display: flex;
     display: block;
     padding: 5px;
@@ -24,8 +23,15 @@ h2{
 }
 li{
     float:left;
-    margin-right:50px;
+    /* margin-right:50px;
+    margin-left:0px; */
+    padding-right:25px;
+    padding-left:25px;
+    border-right: 1px solid red;
 }
+/* li:last-child{
+    border-right:none;
+} */
 a {
     display: block;
     padding: 5px;
@@ -34,9 +40,13 @@ a {
     color: red;
     font-weight: bold;
   }
+li a:hover{
+    background-color:rgb(255, 94, 0);
+    color:rgb(255, 248, 169);
+}
 p{
-    color:rgb(216, 0, 11)
+    color:rgb(216, 0, 11);
 }
 #paragraphs {
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 248, 169, 0.25);
 }
