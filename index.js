@@ -12,6 +12,17 @@ document.getElementById("p1").innerHTML = "Hello " + firstName + "!";
 document.getElementById("p2").innerHTML = "You are " + age + " years old.";
 document.getElementById("p3").innerHTML = "Student? " + student;
 
+let students = 20;
+console.log("The original number of students is:", students);
+students = students - 3;
+console.log("After 3 students leave this section, there will be", students, "students.");
+students = students * 2;
+console.log("If the class size doubles, there will be", students, "students.");
+students = students + 1;
+console.log("One more student joins the course. There are currently", students, "students.");
+students = students % 3;
+console.log("If the students formed groups of 3, there would be", students, "remaining.");
+
 console.log(age);
 console.log("My name is ", firstName, lastName);
 console.log("Is", firstName, lastName, "a student? ", student);
