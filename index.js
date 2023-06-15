@@ -23,9 +23,9 @@ console.log("One more student joins the course. There are currently", students, 
 students = students % 3;
 console.log("If the students form groups of 3, there will be", students, "remaining.");
 students = students ** 3;
-console.log("If that number is raised to the power three, there will be", students,"students.");
+console.log("If that number is raised to the power three, there will be", students, "students.");
 students += 1;
-console.log("8 + 1 = ",students,"students");
+console.log("8 + 1 = ", students, "students");
 
 console.log(age);
 console.log("My name is ", firstName, lastName);
@@ -33,4 +33,3 @@ console.log("Is", firstName, lastName, "a student? ", student);
 
 let username = window.prompt("Hello! What is your name?");
 console.log(username);
-
