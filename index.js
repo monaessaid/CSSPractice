@@ -38,10 +38,10 @@ let username2;
 
 document.getElementById("myButton").onclick = function () {
     username2 = document.getElementById("myText").value;
-    if (username2 === "Chihiro") {
-        window.alert("Chihiro...What a pretty name! It belongs to me now. From now on, your name is Sen.");
-        document.getElementById("myLabel").innerHTML = "Hello Sen...";
-    } else {
+    // if (username2 == "Chihiro" || "chihiro" || "CHIHIRO") {
+    //     window.alert("Chihiro...What a pretty name! It belongs to me now. From now on, your name is Sen.");
+    //     document.getElementById("myLabel").innerHTML = "Hello Sen...";
+    // } else{
         document.getElementById("myLabel").innerHTML = "Hello, " + username2 + "!";
-    }
+    // }
 }

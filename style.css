@@ -59,3 +59,15 @@ p {
 #paragraphs {
     background: rgba(255, 248, 169, 0.35);
 }
+
+#myButton {
+    background-color:rgb(255, 248, 169);
+    border:rgb(255, 0, 13);
+    font-size: 15px;
+}
+
+#myLabel {
+    color: rgb(255, 0, 255);
+    background-color: yellow;
+    font-size: 20px;
+}
