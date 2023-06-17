@@ -45,3 +45,11 @@ document.getElementById("myButton").onclick = function () {
         document.getElementById("myLabel").innerHTML = "Hello, " + username2 + "!";
     }
 }
+
+let age2 = window.prompt("How old are you?");
+
+console.log(typeof age2);
+age2 = Number(age2);
+age2 += 1;
+console.log(typeof age2);
+console.log("Happy birthday! You are " + age2 + " years old!");
