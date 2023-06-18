@@ -195,3 +195,17 @@ if (online){
 } else {
     console.log("User is offline");
 }
+
+document.getElementById("creatureSubmit").onclick = function(){
+    if (document.getElementById("humanCB").checked){
+        document.getElementById("creatureType").innerHTML = "Bye, Felicia!";
+    } else if (document.getElementById("dolphinCB").checked){
+        document.getElementById("creatureType").innerHTML = "So long and thanks for all the fish!";
+    } else if (document.getElementById("turtleCB").checked){
+        document.getElementById("creatureType").innerHTML = "Bye, turtle!";
+    } else if (document.getElementById("virusCB").checked){
+        document.getElementById("creatureType").innerHTML = "You gave E.T. covid...";
+    } else if (document.getElementById("frogCB").checked){
+        document.getElementById("creatureType").innerHTML = "Ribbit ribbit";
+}
+}

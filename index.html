@@ -62,27 +62,36 @@
     <label id="elabel">Ready Player 2!</label><br><br>
     <label id="flabel">Ready Player 3!</label><br><br>
     <button id = "rollBtn">Roll!</button>
-    <script src="index.js"></script>
     
     <!-- Checked property for checked boxes and radio buttons -->
     <br><br>
-    <span id="creatureQuestion">What would you like to launch into the vast emptiness of space?</span><br><br>
+    <span id="creatureQuestion"><label id="creatureType">What would you like to launch into the vast emptiness of space?</label></span><br><br>
 
-    <span id="humanLabel"><label for="humanCB">Human &#128131</label></span>
-    <input type="checkbox" id="humanCB">
+    <span id="humanLabel"><label for="humanCB">Human &#x1f44b</label></span>
+    <input type="radio" name="creature" id="humanCB">
 
     <span id="dolphinLabel"><label for="dolphinCB">Dolphin &#128044</label></span>
-    <input type="checkbox" id="dolphinCB">
+    <input type="radio" name="creature" id="dolphinCB">
 
     <span id="turtleLabel"><label for="turtleCB">Turtle &#128034</label></span>
-    <input type="checkbox" id="turtleCB">
+    <input type="radio" name="creature" id="turtleCB">
 
     <span id="virusLabel"><label for="virusCB">Microbe/Virus &#129440</label></span>
-    <input type="checkbox" id="virusCB">
+    <input type="radio" name="creature" id="virusCB">
 
     <span id="frogLabel"><label for="frogCB">Tree Frog &#128056</label></span>
-    <input type="checkbox" id="frogCB">
+    <input type="radio" name="creature" id="frogCB">
+
+    <br><br>
+
+    <button id="creatureSubmit">Submit!</button>
+
+    <br>
+    <br>
+
 
 </body>
+
+<script src="index.js"></script>
 
 </html>
