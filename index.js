@@ -50,14 +50,14 @@ document.getElementById("myButton").onclick = function () {
     }
 }
 
-//Data types/type conversions
-let age2 = window.prompt("How old are you?");
+// //Data types/type conversions
+// let age2 = window.prompt("How old are you?");
 
-console.log(typeof age2);
-age2 = Number(age2);
-age2 += 1;
-console.log(typeof age2);
-console.log("Happy birthday! You are " + age2 + " years old!");
+// console.log(typeof age2);
+// age2 = Number(age2);
+// age2 += 1;
+// console.log(typeof age2);
+// console.log("Happy birthday! You are " + age2 + " years old!");
 
 let x;
 let y;
@@ -71,3 +71,38 @@ console.log(x, typeof x);
 console.log(y, typeof y);
 console.log(z, typeof z);
 
+//Constants
+const PI = Math.PI;
+let radius;
+let circumference;
+
+radius = window.prompt("Enter the radius:");
+radius = Number(radius);
+
+circumference = 2 * PI * radius;
+
+console.log("The circumference is: " + circumference);
+
+//JS Math Functions
+
+let a = 9;
+let b = 6;
+let c = 15;
+let max;
+let min;
+// a = Math.round(a);
+// console.log("Rounded:" + a);
+// a = Math.floor(a);
+// console.log("Rounded down:" + a);
+// a = Math.ceil(a);
+// console.log("Rounded up:" + a);
+a = Math.pow(a, 3);
+console.log("Cubed: "+ a);
+a = Math.sqrt(a);
+console.log("Square root of a: "+ a);
+// a = Math.abs(a);
+// console.log(a);
+max = Math.max(a,b,c);
+console.log("Max value is: "+ max);
+min = Math.min(a,b,c);
+console.log("Min value is: "+ min);
