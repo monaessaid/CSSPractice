@@ -76,12 +76,12 @@ const PI = Math.PI;
 let radius;
 let circumference;
 
-radius = window.prompt("Enter the radius:");
-radius = Number(radius);
+// radius = window.prompt("Enter the radius:");
+// radius = Number(radius);
 
-circumference = 2 * PI * radius;
+// circumference = 2 * PI * radius;
 
-console.log("The circumference is: " + circumference);
+// console.log("The circumference is: " + circumference);
 
 //JS Math Functions
 
@@ -106,3 +106,22 @@ max = Math.max(a,b,c);
 console.log("Max value is: "+ max);
 min = Math.min(a,b,c);
 console.log("Min value is: "+ min);
+
+{/* <button id="decBtn">Decrease</button>
+<button id="resetBtn">Reset</button>
+<button id="incBtn">Increase</button> */}
+
+let count = 0;
+
+document.getElementById("decBtn").onclick = function(){
+    count-=1;
+    document.getElementById("countLabel").innerHTML = count;
+}
+document.getElementById("resetBtn").onclick = function(){
+    count=0;
+    document.getElementById("countLabel").innerHTML = count;
+}
+document.getElementById("incBtn").onclick = function(){
+    count+=1;
+    document.getElementById("countLabel").innerHTML = count;
+}
