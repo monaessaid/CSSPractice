@@ -209,3 +209,4 @@ document.getElementById("creatureSubmit").onclick = function(){
         document.getElementById("creatureType").innerHTML = "Ribbit ribbit";
 }
 }
+
