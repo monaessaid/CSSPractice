@@ -159,3 +159,19 @@ console.log(userName.toUpperCase());
 console.log(userName.toLowerCase());
 phone = phone.replaceAll("5", "*");
 console.log(phone);
+
+//String Slicing 
+
+let fullName = "Bob Ross";
+let fName;
+let lName;
+
+// fName = fullName.slice(0,4);
+// console.log(fName);
+// lName = fullName.slice(5);
+// console.log(lName);
+
+fName = fullName.slice(0, fullName.indexOf(" ")+1);
+console.log(fName);
+lName = fullName.slice(fullName.indexOf(" ")+1);
+console.log(lName);
