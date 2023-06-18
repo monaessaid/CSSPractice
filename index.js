@@ -8,10 +8,12 @@ let lastName = "Essaid";
 
 let student = true;
 
+//Changing the first 3 paragraphs to different text
 document.getElementById("p1").innerHTML = "Hello " + firstName + "!";
 document.getElementById("p2").innerHTML = "You are " + age + " years old.";
 document.getElementById("p3").innerHTML = "Student? " + student;
 
+//Arithmetic operations
 let students = 20;
 console.log("The original number of students is:", students);
 students = students - 3;
@@ -27,6 +29,7 @@ console.log("If that number is raised to the power three, there will be", studen
 students += 1;
 console.log("8 + 1 = ", students, "students");
 
+//Printing to console 
 console.log(age);
 console.log("My name is ", firstName, lastName);
 console.log("Is", firstName, lastName, "a student? ", student);
@@ -36,6 +39,7 @@ console.log("Is", firstName, lastName, "a student? ", student);
 
 let username2;
 
+//Textbox where visitor can type their name. Text before button will change to say "Hello (Name)"
 document.getElementById("myButton").onclick = function () {
     username2 = document.getElementById("myText").value;
     if (username2 === "Chihiro") {
@@ -46,6 +50,7 @@ document.getElementById("myButton").onclick = function () {
     }
 }
 
+//Data types/type conversions
 let age2 = window.prompt("How old are you?");
 
 console.log(typeof age2);
@@ -60,8 +65,9 @@ let z;
 
 x = Number("3.14");
 y = String(3.14);
-z = Boolean("");
+z = Boolean("o");
 
 console.log(x, typeof x);
 console.log(y, typeof y);
 console.log(z, typeof z);
+
