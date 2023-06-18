@@ -175,3 +175,23 @@ fName = fullName.slice(0, fullName.indexOf(" ")+1);
 console.log(fName);
 lName = fullName.slice(fullName.indexOf(" ")+1);
 console.log(lName);
+
+// If/else statements
+
+let age3 = -1;
+
+if(age3 >= 18){
+console.log("You are 18 or over!");
+} else if (age3 < 0) {
+    console.log("Invalid input!");
+} else if (age3 < 18){
+console.log("You are under 18!");
+}
+
+let online = false;
+
+if (online){
+    console.log("User is online");
+} else {
+    console.log("User is offline");
+}
