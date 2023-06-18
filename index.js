@@ -111,6 +111,7 @@ console.log("Min value is: "+ min);
 <button id="resetBtn">Reset</button>
 <button id="incBtn">Increase</button> */}
 
+//Declare count variable. Count is incremented, decremented, or reset with the buttons
 let count = 0;
 
 document.getElementById("decBtn").onclick = function(){
@@ -125,3 +126,21 @@ document.getElementById("incBtn").onclick = function(){
     count+=1;
     document.getElementById("countLabel").innerHTML = count;
 }
+
+//Random Number Generator
+
+let d;
+let e;
+let f;
+
+document.getElementById("rollBtn").onclick = function(){
+    
+    let d = Math.floor((Math.random() * 10) + 1);
+    let e = Math.floor((Math.random() * 15) + 1);
+    let f = Math.floor((Math.random() * 20) + 1);
+
+    document.getElementById("dlabel").innerHTML = "Player 1: " + d;
+    document.getElementById("elabel").innerHTML = "Player 2: " + e;
+    document.getElementById("flabel").innerHTML = "Player 3: " + f;
+}
+
