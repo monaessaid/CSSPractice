@@ -180,14 +180,11 @@ p {
     font-size: 20px;
 }
 
-
-/* <br><br>
-
-    <span id="turtleLabel"><label for="turtleCB">Turtle &#128034</label></span>
-    <input type="checkbox" id="turtleCB">
-
-    <span id="virusLabel"><label for="virusCB">Microbe/Virus &#129440</label></span>
-    <input type="checkbox" id="virusCB">
-
-    <span id="frogLabel"><label for="frogCB">Tree Frog &#128056</label></span>
-    <input type="checkbox" id="frogCB">*/
+#creatureSubmit {
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 238, 0);
+    border-style:dotted;
+    border-radius: 5px;
+    border-color: red;
+    font-size:20px;
+}

@@ -204,7 +204,7 @@ document.getElementById("creatureSubmit").onclick = function(){
     } else if (document.getElementById("turtleCB").checked){
         document.getElementById("creatureType").innerHTML = "Bye, turtle!";
     } else if (document.getElementById("virusCB").checked){
-        document.getElementById("creatureType").innerHTML = "You gave E.T. covid...";
+        document.getElementById("creatureType").innerHTML = "You gave E.T. covid... he can't phone home";
     } else if (document.getElementById("frogCB").checked){
         document.getElementById("creatureType").innerHTML = "Ribbit ribbit";
 }
