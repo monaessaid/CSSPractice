@@ -45,7 +45,7 @@ document.getElementById("myButton").onclick = function () {
     if (username2 === "Chihiro") {
         window.alert("Chihiro...What a pretty name! It belongs to me now. From now on, your name is Sen.");
         document.getElementById("myLabel").innerHTML = "Hello Sen...";
-    } else{
+    } else {
         document.getElementById("myLabel").innerHTML = "Hello, " + username2 + "!";
     }
 }
@@ -97,15 +97,15 @@ let min;
 // a = Math.ceil(a);
 // console.log("Rounded up:" + a);
 a = Math.pow(a, 3);
-console.log("Cubed: "+ a);
+console.log("Cubed: " + a);
 a = Math.sqrt(a);
-console.log("Square root of a: "+ a);
+console.log("Square root of a: " + a);
 // a = Math.abs(a);
 // console.log(a);
-max = Math.max(a,b,c);
-console.log("Max value is: "+ max);
-min = Math.min(a,b,c);
-console.log("Min value is: "+ min);
+max = Math.max(a, b, c);
+console.log("Max value is: " + max);
+min = Math.min(a, b, c);
+console.log("Min value is: " + min);
 
 {/* <button id="decBtn">Decrease</button>
 <button id="resetBtn">Reset</button>
@@ -114,16 +114,16 @@ console.log("Min value is: "+ min);
 //Declare count variable. Count is incremented, decremented, or reset with the buttons
 let count = 0;
 
-document.getElementById("decBtn").onclick = function(){
-    count-=1;
+document.getElementById("decBtn").onclick = function () {
+    count -= 1;
     document.getElementById("countLabel").innerHTML = count;
 }
-document.getElementById("resetBtn").onclick = function(){
-    count=0;
+document.getElementById("resetBtn").onclick = function () {
+    count = 0;
     document.getElementById("countLabel").innerHTML = count;
 }
-document.getElementById("incBtn").onclick = function(){
-    count+=1;
+document.getElementById("incBtn").onclick = function () {
+    count += 1;
     document.getElementById("countLabel").innerHTML = count;
 }
 
@@ -133,8 +133,9 @@ let d;
 let e;
 let f;
 
-document.getElementById("rollBtn").onclick = function(){
-    
+//Generates 3 random numbers up to 10, 15, or 20 for each player
+document.getElementById("rollBtn").onclick = function () {
+
     let d = Math.floor((Math.random() * 10) + 1);
     let e = Math.floor((Math.random() * 15) + 1);
     let f = Math.floor((Math.random() * 20) + 1);
@@ -144,3 +145,17 @@ document.getElementById("rollBtn").onclick = function(){
     document.getElementById("flabel").innerHTML = "Player 3: " + f;
 }
 
+//String methods
+
+let userName = "Mona";
+let phone = "123-456-7890";
+
+let nameLength = userName.length;
+console.log("Your username, " + userName + ", has " + nameLength + " characters.");
+console.log(userName.charAt(6));
+console.log(userName.indexOf("e"));
+console.log(userName.lastIndexOf("e"));
+console.log(userName.toUpperCase());
+console.log(userName.toLowerCase());
+phone = phone.replaceAll("5", "*");
+console.log(phone);
