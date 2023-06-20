@@ -171,71 +171,88 @@ let lName;
 // lName = fullName.slice(5);
 // console.log(lName);
 
-fName = fullName.slice(0, fullName.indexOf(" ")+1);
+fName = fullName.slice(0, fullName.indexOf(" ") + 1);
 console.log(fName);
-lName = fullName.slice(fullName.indexOf(" ")+1);
+lName = fullName.slice(fullName.indexOf(" ") + 1);
 console.log(lName);
 
 // If/else statements
 
 let age3 = -1;
 
-if(age3 >= 18){
-console.log("You are 18 or over!");
+if (age3 >= 18) {
+    console.log("You are 18 or over!");
 } else if (age3 < 0) {
     console.log("Invalid input!");
-} else if (age3 < 18){
-console.log("You are under 18!");
+} else if (age3 < 18) {
+    console.log("You are under 18!");
 }
 
 let online = false;
 
-if (online){
+if (online) {
     console.log("User is online");
 } else {
     console.log("User is offline");
 }
 
-document.getElementById("creatureSubmit").onclick = function(){
-    if (document.getElementById("humanCB").checked){
+document.getElementById("creatureSubmit").onclick = function () {
+    if (document.getElementById("humanCB").checked) {
         document.getElementById("creatureType").innerHTML = "Bye, Felicia!";
-    } else if (document.getElementById("dolphinCB").checked){
+    } else if (document.getElementById("dolphinCB").checked) {
         document.getElementById("creatureType").innerHTML = "So long and thanks for all the fish!";
-    } else if (document.getElementById("turtleCB").checked){
+    } else if (document.getElementById("turtleCB").checked) {
         document.getElementById("creatureType").innerHTML = "Bye, turtle!";
-    } else if (document.getElementById("virusCB").checked){
+    } else if (document.getElementById("virusCB").checked) {
         document.getElementById("creatureType").innerHTML = "You gave E.T. covid... he can't phone home";
-    } else if (document.getElementById("frogCB").checked){
+    } else if (document.getElementById("frogCB").checked) {
         document.getElementById("creatureType").innerHTML = "Ribbit ribbit";
-}
-}
-
-let grade;
-    //Not working
-    document.getElementById("markSubmit").onclick = function(){
-        grade = document.getElementById("myMark").value;
-        switch(true){
-            case grade >= 101:
-                document.getElementById("myResult").innerHTML = "Your score is over 100! Not valid!";
-                break; 
-            case grade >= 90:
-                document.getElementById("myResult").innerHTML = "Congratulations! It's an A";
-                break;
-            case grade >= 80:
-               document.getElementById("myResult").innerHTML = "Great job! You got a B!";
-               break;
-            case grade >= 70:
-               document.getElementById("myResult").innerHTML = "Good work, you passed with a C!";
-               break;
-            case grade >= 60:
-                document.getElementById("myResult").innerHTML = "You managed to pass, at least &#128517";
-                break;
-            case grade >= 50:
-                document.getElementById("myResult").innerHTML = "Unfortunately, you failed...";
-                break;
-            default:
-               document.getElementById("myResult").innerHTML = grade + " is not ja valid score! Please try again";
-               break;
-        }
-
     }
+}
+
+//Grade switch statement 
+let grade;
+document.getElementById("markSubmit").onclick = function () {
+    grade = document.getElementById("myMark").value;
+    switch (true) {
+        case grade >= 101:
+            document.getElementById("myResult").innerHTML = "Your score is over 100! Not valid!";
+            break;
+        case grade >= 90:
+            document.getElementById("myResult").innerHTML = "Congratulations! It's an A";
+            break;
+        case grade >= 80:
+            document.getElementById("myResult").innerHTML = "Great job! You got a B!";
+            break;
+        case grade >= 70:
+            document.getElementById("myResult").innerHTML = "Good work, you passed with a C!";
+            break;
+        case grade >= 60 || grade >= 50:
+            document.getElementById("myResult").innerHTML = "You managed to pass, at least &#128517";
+            break;
+        case grade <= 49:
+            document.getElementById("myResult").innerHTML = "Unfortunately, you failed...";
+            break;
+        default:
+            document.getElementById("myResult").innerHTML = grade + " is not a valid score! Please try again";
+            break;
+    }
+
+}
+
+//AND OR
+let age4;
+document.getElementById("myAgeButton").onclick = function () {
+    age4 = document.getElementById("myAge").value;
+    if (age4 < 18) {
+        document.getElementById("myAgeLabel").innerHTML = "You are not an adult yet!";
+    } else if (age4 >= 100) {
+        document.getElementById("myAgeLabel").innerHTML = "You are 100 years old or over!";
+    } else if (age4 >= 66) {
+        document.getElementById("myAgeLabel").innerHTML = "You are a senior!";
+    } else if (age4 >= 18 || age <= 65) {
+        document.getElementById("myAgeLabel").innerHTML = "You are an adult!";
+    } else {
+        document.getElementById("myAgeLabel").innerHTML = "Invalid input!";
+    }
+}
