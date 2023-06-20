@@ -210,3 +210,32 @@ document.getElementById("creatureSubmit").onclick = function(){
 }
 }
 
+let grade;
+    //Not working
+    document.getElementById("markSubmit").onclick = function(){
+        grade = document.getElementById("myMark").value;
+        switch(true){
+            case grade >= 101:
+                document.getElementById("myResult").innerHTML = "Your score is over 100! Not valid!";
+                break; 
+            case grade >= 90:
+                document.getElementById("myResult").innerHTML = "Congratulations! It's an A";
+                break;
+            case grade >= 80:
+               document.getElementById("myResult").innerHTML = "Great job! You got a B!";
+               break;
+            case grade >= 70:
+               document.getElementById("myResult").innerHTML = "Good work, you passed with a C!";
+               break;
+            case grade >= 60:
+                document.getElementById("myResult").innerHTML = "You managed to pass, at least &#128517";
+                break;
+            case grade >= 50:
+                document.getElementById("myResult").innerHTML = "Unfortunately, you failed...";
+                break;
+            default:
+               document.getElementById("myResult").innerHTML = grade + " is not ja valid score! Please try again";
+               break;
+        }
+
+    }
