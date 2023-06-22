@@ -265,15 +265,37 @@ document.getElementById("myAgeButton").onclick = function () {
 // console.log("Hello", userName3);
 
 // While and for loop counters
-let i = 1;
 
-while(i<=10){
-    console.log(i);
-    i++;
+
+//Counters and continue
+let n = 1;
+
+while(n<=10){
+    console.log(n);
+    n++;
 }
 
-for(let counter=11; counter <= 20; counter ++){
+for(let counter=11; counter <= 20; counter++){
+    if(counter === 12){
+        continue;
+    }
     console.log(counter);
 }
 
-//Reached the video ->  mins in to the 8 hour one 
+for(let y = 1; y<= 5; y++){
+    for(let z = 1; z<=5; z++){
+        console.log(z);
+    }
+}
+
+
+//Need to add user input in text boxes for r and s
+//Want to add a way for the user to pick a symbol to print rather than just the numbers
+for(let r = 1; r<= 5; r++){
+    for(let s= 1; s<=5; s++){
+        document.getElementById("myRectangle").innerHTML += s;
+    }
+    document.getElementById("myRectangle").innerHTML += "<br>";
+}
+
+//Reached the video -> 1:35 mins in to the 8 hour one 
