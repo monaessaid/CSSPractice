@@ -230,17 +230,16 @@ document.getElementById("markSubmit").onclick = function () {
         case grade >= 60 || grade >= 50:
             document.getElementById("myResult").innerHTML = "You managed to pass, at least &#128517";
             break;
-        case grade <= 49:
+        case grade <= 49 && grade >=0:
             document.getElementById("myResult").innerHTML = "Unfortunately, you failed...";
             break;
         default:
-            document.getElementById("myResult").innerHTML = grade + " is not a valid score! Please try again";
+            document.getElementById("myResult").innerHTML = grade + " is not a valid score! Please enter a score between 0-10";
             break;
     }
-
 }
 
-//AND OR
+//AND and OR Operators
 let age4;
 document.getElementById("myAgeButton").onclick = function () {
     age4 = document.getElementById("myAge").value;
@@ -256,3 +255,25 @@ document.getElementById("myAgeButton").onclick = function () {
         document.getElementById("myAgeLabel").innerHTML = "Invalid input!";
     }
 }
+
+// let userName3 = "";
+
+// while(userName3 === "" || userName3 === null){
+//     userName3 = window.prompt("Enter your username:");
+// }
+
+// console.log("Hello", userName3);
+
+// While and for loop counters
+let i = 1;
+
+while(i<=10){
+    console.log(i);
+    i++;
+}
+
+for(let counter=11; counter <= 20; counter ++){
+    console.log(counter);
+}
+
+//Reached the video ->  mins in to the 8 hour one 
