@@ -288,15 +288,17 @@ for(let y = 1; y<= 5; y++){
     }
 }
 
-
-//Need to add user input in text boxes for r and s
-//Want to add a way for the user to pick a symbol to print rather than just the numbers
-for(let r = 1; r<= 10; r++){
-    for(let s= 1; s<=10; s++){
-        document.getElementById("myRectangle").innerHTML += " * ";
+//Allows the user to draw a rectangle with a specified number of rows and columns and a symbol of their choice
+document.getElementById("rectangleSubmit").onclick = function () {
+    let rows = document.getElementById("numRows").value;
+    let cols = document.getElementById("numCols").value;
+    let symb = document.getElementById("symbol").value;
+    for(let r = 1; r<= rows; r++){
+    for(let s= 1; s<=cols; s++){
+        document.getElementById("myRectangle").innerHTML += symb;
     }
     document.getElementById("myRectangle").innerHTML += "<br>";
 }
-
+}
 
 //Reached the video -> 1:35 mins in to the 8 hour one 
