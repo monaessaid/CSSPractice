@@ -230,7 +230,7 @@ document.getElementById("markSubmit").onclick = function () {
         case grade >= 60 || grade >= 50:
             document.getElementById("myResult").innerHTML = "You managed to pass, at least &#128517";
             break;
-        case grade <= 49 && grade >=0:
+        case grade <= 49 && grade >= 0:
             document.getElementById("myResult").innerHTML = "Unfortunately, you failed...";
             break;
         default:
@@ -270,20 +270,20 @@ document.getElementById("myAgeButton").onclick = function () {
 //Counters and continue
 let n = 1;
 
-while(n<=10){
+while (n <= 10) {
     console.log(n);
     n++;
 }
 
-for(let counter=11; counter <= 20; counter++){
-    if(counter === 12){
+for (let counter = 11; counter <= 20; counter++) {
+    if (counter === 12) {
         continue;
     }
     console.log(counter);
 }
 
-for(let y = 1; y<= 5; y++){
-    for(let z = 1; z<=5; z++){
+for (let y = 1; y <= 5; y++) {
+    for (let z = 1; z <= 5; z++) {
         console.log(z);
     }
 }
@@ -293,12 +293,12 @@ document.getElementById("rectangleSubmit").onclick = function () {
     let rows = document.getElementById("numRows").value;
     let cols = document.getElementById("numCols").value;
     let symb = document.getElementById("symbol").value;
-    for(let r = 1; r<= rows; r++){
-    for(let s= 1; s<=cols; s++){
-        document.getElementById("myRectangle").innerHTML += symb;
+    for (let r = 1; r <= rows; r++) {
+        for (let s = 1; s <= cols; s++) {
+            document.getElementById("myRectangle").innerHTML += symb;
+        }
+        document.getElementById("myRectangle").innerHTML += "<br>";
     }
-    document.getElementById("myRectangle").innerHTML += "<br>";
-}
 }
 
 //Reached the video -> 1:35 mins in to the 8 hour one 

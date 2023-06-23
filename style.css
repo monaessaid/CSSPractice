@@ -2,7 +2,7 @@ body {
     width: 100vw;
     height: 100vh;
     background-image: url("space.jpg");
-    background-size:cover;
+    background-size: cover;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -55,7 +55,7 @@ li a:hover {
 
 p {
     color: rgb(13, 255, 0);
-    background-color:black;
+    background-color: black;
 }
 
 #paragraphs {
@@ -63,8 +63,8 @@ p {
 }
 
 #myButton {
-    background-color:rgb(13, 255, 0);
-    color:rgb(128, 0, 255);
+    background-color: rgb(13, 255, 0);
+    color: rgb(128, 0, 255);
     border-color: rgb(128, 0, 255);
     font-size: 15px;
 }
@@ -82,8 +82,8 @@ p {
 }
 
 #myAgeButton {
-    background-color:rgb(13, 255, 0);
-    color:rgb(128, 0, 255);
+    background-color: rgb(13, 255, 0);
+    color: rgb(128, 0, 255);
     border-color: rgb(128, 0, 255);
     font-size: 15px;
 }
@@ -97,28 +97,28 @@ p {
 #decBtn {
     color: rgb(205, 161, 255);
     background-color: rgb(53, 0, 109);
-    border-style:dotted;
+    border-style: dotted;
     border-radius: 5px;
     border-color: rgb(128, 0, 255);
-    font-size:20px;
+    font-size: 20px;
 }
 
 #resetBtn {
     color: rgb(255, 0, 0);
     background-color: rgb(255, 238, 0);
-    border-style:dotted;
+    border-style: dotted;
     border-radius: 5px;
     border-color: red;
-    font-size:20px;
+    font-size: 20px;
 }
 
 #incBtn {
     color: rgb(200, 255, 175);
     background-color: rgb(0, 87, 7);
-    border-style:dotted;
+    border-style: dotted;
     border-radius: 5px;
-    border-color:rgb(34, 255, 0);
-    font-size:20px;
+    border-color: rgb(34, 255, 0);
+    font-size: 20px;
 }
 
 #dlabel {
@@ -142,10 +142,10 @@ p {
 #rollBtn {
     color: rgb(255, 0, 0);
     background-color: rgb(255, 238, 0);
-    border-style:dotted;
+    border-style: dotted;
     border-radius: 5px;
     border-color: red;
-    font-size:20px;
+    font-size: 20px;
 }
 
 #creatureQuestion {
@@ -177,6 +177,7 @@ p {
     background-color: rgb(0, 53, 8);
     font-size: 20px;
 }
+
 #virusLabel {
     color: rgb(0, 255, 162);
     background-color: rgb(0, 145, 217);
@@ -192,19 +193,19 @@ p {
 #creatureSubmit {
     color: rgb(255, 0, 0);
     background-color: rgb(255, 238, 0);
-    border-style:dotted;
+    border-style: dotted;
     border-radius: 5px;
     border-color: red;
-    font-size:20px;
+    font-size: 20px;
 }
 
-#markSubmit{
+#markSubmit {
     color: rgb(255, 0, 0);
     background-color: rgb(255, 238, 0);
-    border-style:dotted;
+    border-style: dotted;
     border-radius: 5px;
     border-color: red;
-    font-size:20px;
+    font-size: 20px;
 }
 
 #myResult {
@@ -213,42 +214,42 @@ p {
     font-size: 20px;
 }
 
-#myRectangleLabel{
+#myRectangleLabel {
     color: rgb(13, 255, 0);
     background-color: rgb(128, 0, 255);
     font-size: 20px;
 }
 
-#myRectangle{
+#myRectangle {
     color: rgb(13, 255, 0);
     background-color: rgb(128, 0, 255);
     font-size: 20px;
     font-weight: bold;
 }
 
-#rowsLabel{
+#rowsLabel {
     color: rgb(13, 255, 0);
     background-color: rgb(128, 0, 255);
     font-size: 20px;
 }
 
-#colsLabel{
+#colsLabel {
     color: rgb(13, 255, 0);
     background-color: rgb(128, 0, 255);
     font-size: 20px;
 }
 
-#symbolLabel{
+#symbolLabel {
     color: rgb(13, 255, 0);
     background-color: rgb(128, 0, 255);
     font-size: 20px;
 }
 
-#rectangleSubmit{
+#rectangleSubmit {
     color: rgb(255, 0, 0);
     background-color: rgb(255, 238, 0);
-    border-style:dotted;
+    border-style: dotted;
     border-radius: 5px;
     border-color: red;
-    font-size:20px;
+    font-size: 20px;
 }
