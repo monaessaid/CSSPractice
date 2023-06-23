@@ -291,11 +291,12 @@ for(let y = 1; y<= 5; y++){
 
 //Need to add user input in text boxes for r and s
 //Want to add a way for the user to pick a symbol to print rather than just the numbers
-for(let r = 1; r<= 5; r++){
-    for(let s= 1; s<=5; s++){
-        document.getElementById("myRectangle").innerHTML += s;
+for(let r = 1; r<= 10; r++){
+    for(let s= 1; s<=10; s++){
+        document.getElementById("myRectangle").innerHTML += " * ";
     }
     document.getElementById("myRectangle").innerHTML += "<br>";
 }
+
 
 //Reached the video -> 1:35 mins in to the 8 hour one 

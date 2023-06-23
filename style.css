@@ -212,3 +212,37 @@ p {
     background-color: rgb(128, 0, 255);
     font-size: 20px;
 }
+
+#myRectangleLabel{
+    color: rgb(13, 255, 0);
+    background-color: rgb(128, 0, 255);
+    font-size: 20px;
+}
+
+#myRectangle{
+    color: rgb(13, 255, 0);
+    background-color: rgb(128, 0, 255);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#rowsLabel{
+    color: rgb(13, 255, 0);
+    background-color: rgb(128, 0, 255);
+    font-size: 20px;
+}
+
+#colsLabel{
+    color: rgb(13, 255, 0);
+    background-color: rgb(128, 0, 255);
+    font-size: 20px;
+}
+
+#rectangleSubmit{
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 238, 0);
+    border-style:dotted;
+    border-radius: 5px;
+    border-color: red;
+    font-size:20px;
+}
