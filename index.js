@@ -292,7 +292,13 @@ for (let y = 1; y <= 5; y++) {
 document.getElementById("rectangleSubmit").onclick = function () {
     let rows = document.getElementById("numRows").value;
     let cols = document.getElementById("numCols").value;
+    if (rows < 0 || cols < 0) {
+        document.getElementById("myRectangleLabel").innerHTML = "Invalid input- please enter a number greater than 1";
+    }
     let symb = document.getElementById("symbol").value;
+    if (symb.length > 1){
+        document.getElementById("myRectangleLabel").innerHTML = "Please enter only 1 symbol";
+    }
     for (let r = 1; r <= rows; r++) {
         for (let s = 1; s <= cols; s++) {
             document.getElementById("myRectangle").innerHTML += symb;
@@ -301,4 +307,17 @@ document.getElementById("rectangleSubmit").onclick = function () {
     }
 }
 
-//Reached the video -> 1:35 mins in to the 8 hour one 
+// Happy birthday function
+let username3= "Jack";
+happyBirthday(username3);
+
+function happyBirthday(username3){
+    console.log("Happy birthday to you!");
+    console.log("Happy birthday to you!");
+    console.log("Happy birthday dear", username3);
+    console.log("Happy birthday to you!");
+}
+
+
+
+//Reached  mins in to the 8 hour tutorial 
