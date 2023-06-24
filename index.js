@@ -319,5 +319,4 @@ function happyBirthday(username3){
 }
 
 
-
-//Reached  mins in to the 8 hour tutorial 
+//Reached 1:43 mins in to the 8 hour tutorial 
