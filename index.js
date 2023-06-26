@@ -293,7 +293,7 @@ document.getElementById("rectangleSubmit").onclick = function () {
         document.getElementById("myRectangleLabel").innerHTML = "Invalid input- please enter a number greater than 1";
     }
     let symb = document.getElementById("symbol").value;
-    if (symb.length > 1){
+    if (symb.length > 1) {
         document.getElementById("myRectangleLabel").innerHTML = "Please enter only 1 symbol";
     }
     for (let r = 1; r <= rows; r++) {
@@ -305,18 +305,21 @@ document.getElementById("rectangleSubmit").onclick = function () {
 }
 
 // Happy birthday function
-let username3= "Jack";
+let username3 = "Jack";
 happyBirthday(username3);
 
-function happyBirthday(username3){
+function happyBirthday(username3) {
     console.log("Happy birthday to you!");
     console.log("Happy birthday to you!");
     console.log("Happy birthday dear", username3);
     console.log("Happy birthday to you!");
 }
 
-let volume;
-let length;
-let width;
-let height;
-
+document.getElementById("volumeSubmit").onclick = function () {
+        let volume;
+        let length = document.getElementById("lenValue").value;
+        let width = document.getElementById("widthValue").value;
+        let height = document.getElementById("heightValue").value;
+        volume = length * width * height;
+        document.getElementById("volumeLabel").innerHTML = "The volume is " + volume;
+    }

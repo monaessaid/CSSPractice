@@ -294,3 +294,9 @@ p {
     margin-bottom: 5px;
     border-color: rgb(13, 255, 0);
 }
+
+#volumeLabel{
+    color: rgb(128, 0, 255);
+    background-color: rgb(13, 255, 0);
+    font-size: 20px;
+}
