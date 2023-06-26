@@ -264,10 +264,7 @@ document.getElementById("myAgeButton").onclick = function () {
 
 // console.log("Hello", userName3);
 
-// While and for loop counters
-
-
-//Counters and continue
+// While and for loop counters and continue
 let n = 1;
 
 while (n <= 10) {
@@ -318,5 +315,8 @@ function happyBirthday(username3){
     console.log("Happy birthday to you!");
 }
 
+let volume;
+let length;
+let width;
+let height;
 
-//Reached 1:43 mins in to the 8 hour tutorial 
