@@ -315,7 +315,7 @@ function happyBirthday(username3) {
     console.log("Happy birthday to you!");
 }
 
-//Calculate volume
+// Calculate volume
 document.getElementById("volumeSubmit").onclick = function () {
     let volume;
     let length = document.getElementById("lenValue").value;
@@ -325,11 +325,37 @@ document.getElementById("volumeSubmit").onclick = function () {
     document.getElementById("volumeLabel").innerHTML = "The volume is " + volume;
 }
 
-//Ternary Operator
+// Ternary Operator
 let color = isBlue("xyz");
 console.log("Is the color blue?", color);
 
 function isBlue(color) {
-return color === "blue" ? true : false;
+    return color === "blue" ? true : false;
 }
 
+// Formatting numbers
+let price = 12345.68;
+
+// Intl.NumberFormat
+let priceUK = new Intl.NumberFormat(
+    "en-GB", { style: "currency", currency: "GBP" }
+).format(price);
+console.log(priceUK);
+let priceUS = new Intl.NumberFormat(
+    "en-US", { style: "currency", currency: "USD" }
+).format(price);
+console.log(priceUS);
+
+// toLocaleString
+let priceEU = price.toLocaleString("de-DE", {style: "currency", currency: "EUR"});
+console.log(priceEU);
+// Percentage
+let newNum = 0.125;
+newNum = newNum.toLocaleString(undefined, {style:"percent"});
+console.log(newNum);
+// Temperature
+let newNum2 = 55;
+newUnitC = newNum2.toLocaleString(undefined, {style:"unit", unit: "celsius"});
+console.log(newUnitC);
+newUnitF = newNum2.toLocaleString(undefined, {style:"unit", unit: "fahrenheit"});
+console.log(newUnitF);
