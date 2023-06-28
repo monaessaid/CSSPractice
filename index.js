@@ -315,11 +315,21 @@ function happyBirthday(username3) {
     console.log("Happy birthday to you!");
 }
 
+//Calculate volume
 document.getElementById("volumeSubmit").onclick = function () {
-        let volume;
-        let length = document.getElementById("lenValue").value;
-        let width = document.getElementById("widthValue").value;
-        let height = document.getElementById("heightValue").value;
-        volume = length * width * height;
-        document.getElementById("volumeLabel").innerHTML = "The volume is " + volume;
-    }
+    let volume;
+    let length = document.getElementById("lenValue").value;
+    let width = document.getElementById("widthValue").value;
+    let height = document.getElementById("heightValue").value;
+    volume = length * width * height;
+    document.getElementById("volumeLabel").innerHTML = "The volume is " + volume;
+}
+
+//Ternary Operator
+let color = isBlue("xyz");
+console.log("Is the color blue?", color);
+
+function isBlue(color) {
+return color === "blue" ? true : false;
+}
+
