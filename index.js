@@ -347,15 +347,38 @@ let priceUS = new Intl.NumberFormat(
 console.log(priceUS);
 
 // toLocaleString
-let priceEU = price.toLocaleString("de-DE", {style: "currency", currency: "EUR"});
+let priceEU = price.toLocaleString("de-DE", { style: "currency", currency: "EUR" });
 console.log(priceEU);
 // Percentage
 let newNum = 0.125;
-newNum = newNum.toLocaleString(undefined, {style:"percent"});
+newNum = newNum.toLocaleString(undefined, { style: "percent" });
 console.log(newNum);
 // Temperature
 let newNum2 = 55;
-newUnitC = newNum2.toLocaleString(undefined, {style:"unit", unit: "celsius"});
+newUnitC = newNum2.toLocaleString(undefined, { style: "unit", unit: "celsius" });
 console.log(newUnitC);
-newUnitF = newNum2.toLocaleString(undefined, {style:"unit", unit: "fahrenheit"});
+newUnitF = newNum2.toLocaleString(undefined, { style: "unit", unit: "fahrenheit" });
 console.log(newUnitF);
+
+// Random number generator
+
+let compGuess;
+let userGuess;
+// document.getElementById("guessReset").onclick = function () {
+//     compGuess = Math.floor((Math.random() * 10) + 1);
+// }
+
+// Number guessing game (NOT WORKING YET)
+document.getElementById("guessSubmit").onclick = function () {
+    userGuess = document.getElementById("guessValue").value;
+    compGuess = Math.floor((Math.random() * 10) + 1);
+        if (userGuess < compGuess) {
+            document.getElementById("compGuess").innerHTML = "The number you selected is lower than my number! " + compGuess;
+        } else if (userGuess > compGuess) {
+            document.getElementById("compGuess").innerHTML = "The number you selected is higher than my number! " + compGuess;
+        } else if (userGuess == compGuess) {
+            document.getElementById("compGuess").innerHTML = "Your guess was correct!";
+        } else {
+            document.getElementById("compGuess").innerHTML = "Invalid input, please try again";
+        }
+}

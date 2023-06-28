@@ -301,8 +301,41 @@ p {
     font-size: 20px;
 }
 
-#userNameLabel{
+#guessLabel{
     color: rgb(13, 255, 0);
     background-color: rgb(128, 0, 255);
     font-size: 20px;
 }
+
+#compGuess{
+    color: rgb(13, 255, 0);
+    background-color: rgb(128, 0, 255);
+    font-size: 20px;
+}
+
+#guessSubmit {
+    color: rgb(128, 0, 255);
+    background-color: rgb(13, 255, 0);
+    border-style: dotted;
+    border-radius: 5px;
+    border-color: rgb(128, 0, 255);
+    font-size: 20px;
+}
+
+#guessReset {
+    color: rgb(128, 0, 255);
+    background-color: rgb(13, 255, 0);
+    border-style: dotted;
+    border-radius: 5px;
+    border-color: rgb(128, 0, 255);
+    font-size: 20px;
+}
+
+/* #guessReset {
+    color: rgb(13, 255, 0);
+    background-color: rgb(128, 0, 255);
+    border-style: dotted;
+    border-radius: 5px;
+    border-color: rgb(13, 255, 0);
+    font-size: 20px;
+} */
