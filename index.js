@@ -361,24 +361,31 @@ newUnitF = newNum2.toLocaleString(undefined, { style: "unit", unit: "fahrenheit"
 console.log(newUnitF);
 
 // Random number generator
-
 let compGuess;
 let userGuess;
 // document.getElementById("guessReset").onclick = function () {
 //     compGuess = Math.floor((Math.random() * 10) + 1);
 // }
 
-// Number guessing game (NOT WORKING YET)
+ compGuess = Math.floor((Math.random() * 10) + 1);
+
+// Number guessing game
 document.getElementById("guessSubmit").onclick = function () {
     userGuess = document.getElementById("guessValue").value;
-    compGuess = Math.floor((Math.random() * 10) + 1);
-        if (userGuess < compGuess) {
-            document.getElementById("compGuess").innerHTML = "The number you selected is lower than my number! " + compGuess;
-        } else if (userGuess > compGuess) {
-            document.getElementById("compGuess").innerHTML = "The number you selected is higher than my number! " + compGuess;
-        } else if (userGuess == compGuess) {
+    userGuess = parseInt(userGuess);
+        if (userGuess === compGuess) {
             document.getElementById("compGuess").innerHTML = "Your guess was correct!";
-        } else {
+            document.getElementById("guessSubmit").disabled = true;
+        } else if (userGuess > compGuess) {
+            document.getElementById("compGuess").innerHTML = "The number you selected is higher than my number!";
+        } else if (userGuess < compGuess) {
+            document.getElementById("compGuess").innerHTML = "The number you selected is lower than my number!";
+        } else if (isNaN(userGuess)){
             document.getElementById("compGuess").innerHTML = "Invalid input, please try again";
         }
+}
+
+document.getElementById("guessReset").onclick = function () {
+    compGuess = Math.floor((Math.random() * 10) + 1);
+    document.getElementById("guessSubmit").disabled = false;
 }

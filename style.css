@@ -331,6 +331,16 @@ p {
     font-size: 20px;
 }
 
+#guessSubmit:disabled,
+#guessSubmit[disabled] {
+    background-color: rgb(162, 255, 157);
+    color: rgb(243, 255, 136);
+    border-style: dotted;
+    border-radius: 5px;
+    border-color: rgb(243, 255, 136);
+    opacity: 1;
+}
+
 /* #guessReset {
     color: rgb(13, 255, 0);
     background-color: rgb(128, 0, 255);
